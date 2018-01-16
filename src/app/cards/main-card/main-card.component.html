@@ -1,0 +1,16 @@
+<div id="card-window">
+    <mat-card class="main-card" [@cardAnimator]="animationState" (@cardAnimator.done)="resetAnimationState()">
+        <img mat-card-image src="./assets/pusheen-curiosity.jpg" (tap)="startAnimation('hinge')">
+        <mat-card-content (tap)="startAnimation('hinge2')">
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes
+                very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+            </p>
+        </mat-card-content>
+        <mat-card-actions class="card-buttons">
+            <button mat-button color="accent" (tap)="startAnimation('flipY')">Ohio</button>
+            <button mat-raised-button color="primary" (tap)="startAnimation('swing')">Nya</button>
+            <button mat-button color="primary" (tap)="startAnimation('flip')">Nani</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

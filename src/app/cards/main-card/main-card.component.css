@@ -1,0 +1,14 @@
+.card-buttons{
+    display: flex;
+    justify-content: center;
+}
+.main-card {
+    margin: 10%;
+    position: center;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
+.mat-card-image{
+    height: 15rem;
+}

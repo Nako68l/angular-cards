@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as kf from "./keyframe";
 import { trigger, transition, keyframes, animate, style } from '@angular/animations';
 @Component({
-    selector: 'app-main-card',
+    selector: 'main-card',
     templateUrl: './main-card.component.html',
     styleUrls: ['./main-card.component.css'],
     animations: [

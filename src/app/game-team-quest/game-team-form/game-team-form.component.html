@@ -1,5 +1,23 @@
 <form id="game-team-form">
-    <mat-form-field>
-        <input matInput placeholder="Input">
+    <mat-form-field class="title">
+        <input matInput placeholder="Title">
     </mat-form-field>
+    <mat-form-field class="description">
+        <textarea matInput matTextareaAutosize placeholder="Description"></textarea>
+    </mat-form-field>
+    <div class="class-block">
+        <img class="class-icon" src="./assets/Circle-PNG-HD-279x279.png" alt="">
+        <mat-form-field>
+            <mat-select placeholder="Select type" [formControl]="classControl">
+                <mat-optgroup *ngFor="let type of typeGroup" [label]="type.name">
+                    <mat-option *ngFor="let class of type.class" [value]="class.value">
+                        {{ class.viewValue }}
+                    </mat-option>
+                </mat-optgroup>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="class-count">
+            <input matInput placeholder="2" type="number" max="99" min="0">
+        </mat-form-field>
+    </div>
 </form>

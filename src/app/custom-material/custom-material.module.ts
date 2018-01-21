@@ -8,18 +8,11 @@ import {
     MatIconModule,
     MatCardModule,
     MatFormFieldModule,
+    MatSelectModule,
 } from '@angular/material';
 @NgModule({
-    imports: [
-        MatButtonModule,
-        MatInputModule,
-        MatMenuModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatCardModule,
-        MatFormFieldModule,
-    ],
     exports: [
+        MatSelectModule,
         MatButtonModule,
         MatInputModule,
         MatMenuModule,

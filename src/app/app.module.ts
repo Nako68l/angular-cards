@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardsModule } from './cards/cards.module';
 import { GameTeamQuestModule } from './game-team-quest/game-team-quest.module';
 import { ErrorModule } from './error/error.module';
@@ -29,6 +29,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     imports: [
         CardsModule,
         FormsModule,
+        ReactiveFormsModule,
         HttpModule,
         CustomMaterialModule,
         BrowserAnimationsModule,

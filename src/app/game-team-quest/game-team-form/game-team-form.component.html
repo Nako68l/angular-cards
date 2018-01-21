@@ -6,8 +6,9 @@
         <textarea matInput matTextareaAutosize placeholder="Description"></textarea>
     </mat-form-field>
     <div class="class-block">
+        <!-- TODO: make img min size 100px, watch google course about responcive img -->
         <img class="class-icon" src="./assets/Circle-PNG-HD-279x279.png" alt="">
-        <mat-form-field>
+        <mat-form-field class="class-select">
             <mat-select placeholder="Select type" [formControl]="classControl">
                 <mat-optgroup *ngFor="let type of typeGroup" [label]="type.name">
                     <mat-option *ngFor="let class of type.class" [value]="class.value">
@@ -17,7 +18,7 @@
             </mat-select>
         </mat-form-field>
         <mat-form-field class="class-count">
-            <input matInput placeholder="2" type="number" max="99" min="0">
+            <input matInput placeholder="Count" value="1" type="number" max="99" min="0">
         </mat-form-field>
     </div>
 </form>

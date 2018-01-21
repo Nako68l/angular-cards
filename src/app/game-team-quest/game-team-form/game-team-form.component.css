@@ -9,26 +9,32 @@
 .title {
     max-width: 15rem;
     margin-right: 10px;
+    margin-left: 30px;
 }
 
 .description {
     max-width: 20rem;
     width: 100%;
+    margin-left: 30px;
 }
 
 .class-icon {
-    max-width: 50px;
+    transition: width 0.5s;
+    max-height: 4rem;
+    padding-left: 1rem;
 }
 
-mat-form-field {
-    margin-left: 30px;
-}
+mat-form-field {}
 
 .class-count {
     width: 40px;
 }
 
+.class-select {
+    margin-left: 17px;
+    margin-right: 34px;
+}
+
 .class-block {
     display: flex;
-    justify-content: center;
 }
